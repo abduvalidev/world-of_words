@@ -6,7 +6,7 @@ import Background from "./components/Background";
 function App() {
   const apiUrl = "https://dev.api.worldwords.io/web/main/books?lang=ru";
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <div className="relative z-20">
         <Header />
         <Main>
