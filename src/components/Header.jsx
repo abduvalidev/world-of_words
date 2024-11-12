@@ -13,7 +13,7 @@ export default function Header() {
     <header className="max-w-base-2 mx-auto px-five md:px-3.5 lg:px-5 xl:px-10 2xl:px-3 3xl:px-12">
       <div className="border-2 border-t-0 border-black backdrop-blur-[2px] bg-gradient rounded-l-28 rounded-r-28 !rounded-t-none">
         <nav className="bg-gradient border-2 border-t-0 border-[#331E2B]/80 rounded-l-28 rounded-r-28 !rounded-t-none">
-          <div className="flex items-center justify-between gap-7 md:gap-4 px-7 py-3.5">
+          <div className="flex items-center justify-between gap-7 md:gap-4 px-7 xl:px-[68px] py-3.5">
             <div className="shrink-0 md:hidden size-12 flex items-center justify-center bg-dark border-[0.0938rem] border-accent rounded-full">
               <button className="size-[2.375rem] bg-gradient-to-tl to-brand-green-600 from-brand-green-700 border-[1.5px] border-brand-green-500 flex items-center justify-center rounded-full content-hover">
                 <img src={LoginIcon} alt="Logo-icon" className="w-5 h-5" />

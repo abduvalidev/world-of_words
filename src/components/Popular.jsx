@@ -21,133 +21,133 @@ function Popular() {
             <div className="relative flex gap-3.5 overflow-x-auto no-scroll px-4 -mx-4 lg:px-0 lg:mx-0">
               {/* Item 1 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
+                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
                   <img
                     src={PopularImage}
                     alt="popular-image"
                     className="size-full object-cover"
                   />
-                  <div className="absolute top-0 left-0 size-full rounded-28 border-2 border-[#63435799]"></div>
+                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
                 </div>
                 <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
                 <h4 className="font-bold line-clamp-2 mt-2">
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 2 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
+                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
                   <img
                     src={PopularImage}
                     alt="popular-image"
                     className="size-full object-cover"
                   />
-                  <div className="absolute top-0 left-0 size-full rounded-28 border-2 border-[#63435799]"></div>
+                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
                 </div>
                 <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
                 <h4 className="font-bold line-clamp-2 mt-2">
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 3 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
+                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
                   <img
                     src={PopularImage}
                     alt="popular-image"
                     className="size-full object-cover"
                   />
-                  <div className="absolute top-0 left-0 size-full rounded-28 border-2 border-[#63435799]"></div>
+                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
                 </div>
                 <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
                 <h4 className="font-bold line-clamp-2 mt-2">
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 4 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
+                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
                   <img
                     src={PopularImage}
                     alt="popular-image"
                     className="size-full object-cover"
                   />
-                  <div className="absolute top-0 left-0 size-full rounded-28 border-2 border-[#63435799]"></div>
+                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
                 </div>
                 <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
                 <h4 className="font-bold line-clamp-2 mt-2">
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 5 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
+                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
                   <img
                     src={PopularImage}
                     alt="popular-image"
                     className="size-full object-cover"
                   />
-                  <div className="absolute top-0 left-0 size-full rounded-28 border-2 border-[#63435799]"></div>
+                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
                 </div>
                 <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
                 <h4 className="font-bold line-clamp-2 mt-2">
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 6 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
+                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
                   <img
                     src={PopularImage}
                     alt="popular-image"
                     className="size-full object-cover"
                   />
-                  <div className="absolute top-0 left-0 size-full rounded-28 border-2 border-[#63435799]"></div>
+                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
                 </div>
                 <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
                 <h4 className="font-bold line-clamp-2 mt-2">
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 7 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
+                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
                   <img
                     src={PopularImage}
                     alt="popular-image"
                     className="size-full object-cover"
                   />
-                  <div className="absolute top-0 left-0 size-full rounded-28 border-2 border-[#63435799]"></div>
+                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
                 </div>
                 <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
                 <h4 className="font-bold line-clamp-2 mt-2">
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 8 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
+                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
                   <img
                     src={PopularImage}
                     alt="popular-image"
                     className="size-full object-cover"
                   />
-                  <div className="absolute top-0 left-0 size-full rounded-28 border-2 border-[#63435799]"></div>
+                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
                 </div>
                 <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
                 <h4 className="font-bold line-clamp-2 mt-2">
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 9 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
+                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
                   <img
                     src={PopularImage}
                     alt="popular-image"
                     className="size-full object-cover"
                   />
-                  <div className="absolute top-0 left-0 size-full rounded-28 border-2 border-[#63435799]"></div>
+                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
                 </div>
                 <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
                 <h4 className="font-bold line-clamp-2 mt-2">
