@@ -89,7 +89,6 @@ function HeroSection() {
           {/* Custom Overlay Border */}
           <div className="absolute top-0 left-0 z-10 size-full rounded-28 border-2 border-[#63435799]"></div>
         </div>
-
         {/* Custom Next & Prev Buttons */}
         <div className="">
           <div className="absolute z-20 top-1/2 -translate-y-1/2 -translate-x-1/2  hidden md:block size-12 items-center justify-center box-shadow1 rounded-full overflow-hidden border-2 border-[#271822]">

@@ -42,7 +42,7 @@ export default {
         'nine': '0.5625rem',
         15: '0.9375rem',
         1140: '71.25rem',
-        "base": '83.375rem',
+        "base": '82.375rem',
         'base-2': '120rem'
       },
     },
