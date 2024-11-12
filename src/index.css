@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply bg-primary text-white relative overflow-x-hidden font-monserrat
+  }
+}
+
+.content-hover {
+  @apply transition duration-300 ease-in-out transform hover:opacity-75
+}
+
+.bg-gradient {
+  background: radial-gradient(76.09% 100% at 50% 0%, rgba(57, 33, 48, 0.5) 0%, rgba(23, 6, 18, 0.5) 100%);
+  box-shadow: 0px 4px 16.4px 0px #0000004F;
+}
+
+.box-shadow1 {
+  box-shadow: 0px 4px 16.4px 0px #0000004F;
+}
+
+.bg-gradietn {
+  background: linear-gradient(180deg, rgba(155, 102, 136, 0.8) 0%, rgba(80, 49, 70, 0.8) 100%);
+  box-shadow: 0px 4px 16.4px 0px #0000004F;
+  backdrop-filter: blur(2.5px);
+  border: 2px solid #9B718C;
+  /* border-image-source: linear-gradient(180deg, #9B718C 0%, #4D3042 100%); */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* .banner {
+  width: 100%;
+  height: 100%;
+  background: url('./assets/img/banner.png') center/cover no-repeat;
+  mask-image: url('./assets/svg/banner_mask.svg');
+  mask-size: cover;
+  mask-position: center;
+  mask-repeat: no-repeat;
+} */
