@@ -17,8 +17,8 @@ function News() {
       </div>
       <div className="relative">
         <div className="relative z-10 border-2 border-[#271822]/80 bg-gradient__popular rounded-28 mt-4">
-          <div className=" border-2 border-[#634357] rounded-28  p-4 md:p-4 lg:p-6 2xl:p-8">
-            <div className="relative flex gap-3.5 overflow-x-auto no-scroll">
+          <div className="border-2 border-[#634357] rounded-28  p-4 md:p-4 lg:p-6 2xl:p-8">
+            <div className="relative flex gap-3.5 overflow-x-auto no-scroll px-4 -mx-4 lg:px-0 lg:mx-0">
               {/* Item 1 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
                 <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
@@ -34,7 +34,7 @@ function News() {
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 2 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
                 <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
                   <img
@@ -49,7 +49,7 @@ function News() {
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 3 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
                 <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
                   <img
@@ -64,7 +64,7 @@ function News() {
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 4 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
                 <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
                   <img
@@ -79,7 +79,7 @@ function News() {
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 5 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
                 <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
                   <img
@@ -94,7 +94,7 @@ function News() {
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 6 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
                 <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
                   <img
@@ -109,7 +109,7 @@ function News() {
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 7 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
                 <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
                   <img
@@ -124,7 +124,7 @@ function News() {
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 8 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
                 <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
                   <img
@@ -139,7 +139,7 @@ function News() {
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 9 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
                 <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
                   <img
@@ -154,7 +154,7 @@ function News() {
                   Господство клана Неспящих
                 </h4>
               </div>
-              {/* Item 1 */}
+              {/* Item 10 */}
               <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
                 <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-28 border-2 border-[#271822]">
                   <img
