@@ -1,41 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   html {
-    @apply scroll-smooth
+    @apply scroll-smooth;
   }
 
   body {
-    @apply bg-primary text-white relative overflow-x-hidden font-monserrat
+    @apply bg-primary text-white relative overflow-x-hidden font-monserrat;
   }
 }
 
 .content-hover {
-  @apply transition duration-300 ease-in-out transform hover:opacity-75
+  @apply transition duration-300 ease-in-out transform hover:opacity-75;
 }
 
 .bg-gradient {
-  background: radial-gradient(76.09% 100% at 50% 0%, rgba(57, 33, 48, 0.5) 0%, rgba(23, 6, 18, 0.5) 100%);
-  box-shadow: 0px 4px 16.4px 0px #0000004F;
+  background: radial-gradient(
+    76.09% 100% at 50% 0%,
+    rgba(57, 33, 48, 0.5) 0%,
+    rgba(23, 6, 18, 0.5) 100%
+  );
+  box-shadow: 0px 4px 16.4px 0px #0000004f;
 }
 
 .box-shadow1 {
-  box-shadow: 0px 4px 16.4px 0px #0000004F;
+  box-shadow: 0px 4px 16.4px 0px #0000004f;
+}
+.bg-gradient__popular {
+  background: radial-gradient(
+    76.09% 100% at 50% 0%,
+    rgba(69, 40, 58, 0.6) 0%,
+    rgba(36, 19, 31, 0.6) 100%
+  );
+  backdrop-filter: blur(4.5px);
+
+  box-shadow: 0px 4px 16.4px 0px #0000004f;
+}
+.bg-gradietn {
+  background: linear-gradient(
+    180deg,
+    rgba(155, 102, 136, 0.8) 0%,
+    rgba(80, 49, 70, 0.8) 100%
+  );
+  box-shadow: 0px 4px 16.4px 0px #0000004f;
+  backdrop-filter: blur(2.5px);
+  @apply overflow-hidden rounded-full border-2 border-[#9b718c]
 }
 
-.bg-gradietn {
-  background: linear-gradient(180deg, rgba(155, 102, 136, 0.8) 0%, rgba(80, 49, 70, 0.8) 100%);
-  box-shadow: 0px 4px 16.4px 0px #0000004F;
-  backdrop-filter: blur(2.5px);
-  border: 2px solid #9B718C;
-  /* border-image-source: linear-gradient(180deg, #9B718C 0%, #4D3042 100%); */
-  border-radius: 50%;
-  overflow: hidden;
+.border-svg::after {
+  content: '';
+  @apply absolute top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#220F1C] size-2
+}
+
+.border-svg::before {
+  content: '';
+  @apply absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#220F1C] size-2
+}
+
+
+
+/* Scroll styles */
+.no-scroll::-webkit-scrollbar {
+  @apply h-0 w-0;
 }
 
 /* .banner {

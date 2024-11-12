@@ -5,5 +5,14 @@
     "popular": "Популярные",
     "literaryWorlds": "Все литературные миры",
     "loginAcount": "Войти в аккаунт"
+  },
+  "PopularSection": {
+    "popular": "Популярное"
+  },
+  "News": {
+    "newbts": "Новости"
+  },
+  "Apps": {
+    "appBtn": "Все литературные миры"
   }
 }

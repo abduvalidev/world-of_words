@@ -5,5 +5,14 @@
     "popular": "Popular",
     "literaryWorlds": "All literary worlds",
     "loginAcount": "Login account"
+  },
+  "PopularSection": {
+    "popular": "Popular"
+  },
+  "News": {
+    "newbts": "News"
+  },
+  "Apps": {
+    "appBtn": "All literary worlds"
   }
 }

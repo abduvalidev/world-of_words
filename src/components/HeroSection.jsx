@@ -42,52 +42,52 @@ function HeroSection() {
     <section className="max-w-1140 2xl:max-w-base mx-auto flex justify-between gap-11 px-2.5 md:px-10 lg:px-10 2xl:px-5">
       {/* Left Banner */}
       <div className="relative w-full 2xl:max-w-[59.625rem] h-[180px] sm:h-[278px]">
-        <div className="size-full relative z-0 overflow-hidden rounded-28 border-2 border-[#271822]/80 box-shadow1">
-          <Swiper
-            ref={swiperRef}
-            cssMode={false}
-            mousewheel={true}
-            touchAngle={false}
-            modules={[ Navigation, Pagination, Mousewheel, Autoplay,]}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            className="mySwiper !size-full !rounded-28 !overflow-hidden"
-          >
-            {/* Slayderlar */}
-            <SwiperSlide >
-              <img
-                src={Banner}
-                alt='Banner'
-                className="w-full h-full object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide >
-              <img
-                src={Banner}
-                alt='Banner'
-                className="w-full h-full object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide >
-              <img
-                src={Banner}
-                alt='Banner'
-                className="w-full h-full object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide >
-              <img
-                src={Banner}
-                alt='Banner'
-                className="w-full h-full object-cover"
-              />
-            </SwiperSlide>
-          </Swiper>
-
+        <div className="size-full relative z-0 overflow-hidden rounded-28 border-2 border-[#271822] box-shadow1">
           {/* Custom Overlay Border */}
-          <div className="absolute top-0 left-0 z-10 size-full rounded-28 border-2 border-[#63435799]"></div>
+          <div className="size-full rounded-28 border-2 border-[#9b718c]">
+            <Swiper
+              ref={swiperRef}
+              cssMode={false}
+              mousewheel={true}
+              touchAngle={false}
+              modules={[Navigation, Pagination, Mousewheel, Autoplay]}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              className="mySwiper !size-full !rounded-28 !overflow-hidden"
+            >
+              {/* Slayderlar */}
+              <SwiperSlide>
+                <img
+                  src={Banner}
+                  alt="Banner"
+                  className="w-full h-full object-cover"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={Banner}
+                  alt="Banner"
+                  className="w-full h-full object-cover"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={Banner}
+                  alt="Banner"
+                  className="w-full h-full object-cover"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={Banner}
+                  alt="Banner"
+                  className="w-full h-full object-cover"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
         {/* Custom Next & Prev Buttons */}
         <div className="">
