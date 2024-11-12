@@ -15,7 +15,7 @@ export default function Background() {
         alt="background-left"
         className="hidden  min-h-[109.5rem] w-[50.9375rem] absolute top-1/2 -translate-y-1/2 left-0"
       />
-      <img
+      <img 
         src={BackgrounLeft}
         alt="background-left"
         className="hidden min-h-[109.5rem] w-[50.9375rem] absolute top-1/2 -translate-y-1/2 right-0 rotate-180"
