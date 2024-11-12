@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import TelegramIcon from "../assets/svg/telegram-icon.svg";
+import ChormeIcon from "../assets/svg/chorme.svg";
 import { useTranslation } from "react-i18next";
 
 export default function Header() {
@@ -8,18 +9,92 @@ export default function Header() {
     <footer className="max-w-base-2 mx-auto px-five md:px-3.5 lg:px-5 xl:px-10 2xl:px-3 3xl:px-12">
       <div className="border-2 border-b-0 border-black backdrop-blur-[2px] bg-gradient rounded-l-28 rounded-r-28 !rounded-b-none">
         <div className="bg-gradient border-2 border-b-0 border-[#331E2B]/80 rounded-l-28 rounded-t-28 !rounded-b-none overflow-hidden">
-          <div className="px-7 xl:px-[68px] py-3.5 xl:py-6">
-            <div>
-              <Link to="/chat" className="w-max bg-[#271220] border-2 border-[#513748] rounded-full flex items-center gap-3 p-1.5 pr-5">
-                <div className="bg-gradietn size-[2.375rem] flex items-center justify-center">
+          <div className="flex items-center justify-between gap-4 px-7 xl:px-[68px] py-3.5 xl:py-6">
+            <div className="flex items-center gap-4 justify-between w-full md:w-auto">
+              <Link
+                to="/chat"
+                className="size-12 xl:w-max bg-[#271220] border-2 border-[#513748] rounded-full flex items-center justify-center gap-3 xl:p-1.5 xl:pr-5"
+              >
+                <div className="shrink-0 bg-gradietn size-[2.375rem] flex items-center justify-center">
                   <img
                     src={TelegramIcon}
                     alt="telegram-icon"
                     className="size-5"
                   />
                 </div>
-                 <p className="font-medium">{t("Footer.chat")}</p>
+                <span className="hidden xl:block font-medium">
+                  {t("Footer.chat")}
+                </span>
               </Link>
+              <div className="block md:hidden space-y-2">
+                <p className="font-medium text-gradient text-center max-w-[200px] mx-auto">
+                  {t("Footer.center")}
+                </p>
+                <div className="font-medium flex flex-col">
+                  <Link
+                    to="/"
+                    className="text-[#BD89A9] decoration underline underline-offset-2"
+                  >
+                    {t("Footer.policy")}
+                  </Link>
+                  <div className="flex items-center gap-3 justify-between">
+                    <Link
+                      to="/"
+                      className="text-[#BD89A9] decoration underline underline-offset-2"
+                    >
+                      {t("Footer.offer")}
+                    </Link>
+                    <ul className="list-inside">
+                      <li className="list-disc">
+                        <Link className="text-[#BD89A9] decoration underline underline-offset-2">
+                          Контакты
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <Link
+                to="/chat"
+                className="size-12 xl:w-max bg-[#271220] border-2 border-[#513748] rounded-full flex items-center justify-center gap-3 xl:p-1.5 xl:pr-5"
+              >
+                <div className="shrink-0 bg-gradietn size-[2.375rem] flex items-center justify-center">
+                  <img
+                    src={ChormeIcon}
+                    alt="telegram-icon"
+                    className="size-5"
+                  />
+                </div>
+                <span className="hidden xl:block font-medium">
+                  {t("Footer.chorme")}
+                </span>
+              </Link>
+            </div>
+            <p className="hidden md:block font-medium text-gradient text-center max-w-[200px]">
+              {t("Footer.center")}
+            </p>
+            <div className="font-medium hidden md:flex flex-col">
+              <Link
+                to="/"
+                className="text-[#BD89A9] decoration underline underline-offset-2"
+              >
+                {t("Footer.policy")}
+              </Link>
+              <div className="flex items-center gap-3 justify-between">
+                <Link
+                  to="/"
+                  className="text-[#BD89A9] decoration underline underline-offset-2"
+                >
+                  {t("Footer.offer")}
+                </Link>
+                <ul className="list-inside">
+                  <li className="list-disc">
+                    <Link className="text-[#BD89A9] decoration underline underline-offset-2">
+                      Контакты
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

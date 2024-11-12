@@ -16,6 +16,10 @@
     "appBtn": "All literary worlds"
   },
   "Footer": {
-    "chat": "Telegram chat"
+    "chat": "О нас",
+    "chorme": "About Us",
+    "center": "© 2024 • World of Words All rights reserved",
+    "policy": "Privacy Policy",
+    "kontakt": "Contacts"
   }
 }

@@ -48,20 +48,25 @@
   );
   box-shadow: 0px 4px 16.4px 0px #0000004f;
   backdrop-filter: blur(2.5px);
-  @apply overflow-hidden rounded-full border-2 border-[#9b718c]
+  @apply overflow-hidden rounded-full border-2 border-[#9b718c];
 }
 
 .border-svg::after {
-  content: '';
-  @apply absolute top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#220F1C] size-2
+  content: "";
+  @apply absolute top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#220F1C] size-2;
 }
 
 .border-svg::before {
-  content: '';
-  @apply absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#220F1C] size-2
+  content: "";
+  @apply absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#220F1C] size-2;
 }
-
-
+.text-gradient {
+  color: #634357; /* matn rangiga mos rang tanlang */
+  text-shadow: 2px 2px 0 #1a001f, /* yuqori chap soyalar */ -2px 2px 0 #1a001f,
+    /* yuqori o'ng soyalar */ 2px -2px 0 #1a001f,
+    /* past chap soyalar */ -2px -2px 0 #1a001f,
+    /* past o'ng soyalar */ 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
 /* Scroll styles */
 .no-scroll::-webkit-scrollbar {
