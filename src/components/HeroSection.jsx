@@ -3,6 +3,7 @@ import Prev from "../assets/svg/prev.svg";
 import { useRef, useState, useEffect } from "react";
 import { Autoplay, Mousewheel, Navigation, Pagination } from "swiper/modules";
 import { CircularProgress } from "@mui/material";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function HeroSection() {
   const swiperRef = useRef(null);
@@ -94,10 +95,11 @@ function HeroSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <LazyLoadImage
                         src={banner.image_url}
                         alt={`Banner ${index + 1}`}
                         className="w-full h-full object-cover"
+                        effect="blur"
                       />
                     </a>
                   </SwiperSlide>
@@ -153,10 +155,11 @@ function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <LazyLoadImage
               src={smallBanner.image_url}
               alt="RightImage"
               className="size-full object-cover rounded-28"
+              effect="blur"
             />
           </a>
         ) : (

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import TelegramIcon from "../assets/svg/telegram-icon.svg";
 import ChormeIcon from "../assets/svg/chorme.svg";
 import { useTranslation } from "react-i18next";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -16,10 +17,11 @@ export default function Header() {
                 className="size-12 xl:w-max bg-[#271220] border-2 border-[#513748] rounded-full flex items-center justify-center gap-3 xl:p-1.5 xl:pr-5"
               >
                 <div className="shrink-0 bg-gradietn size-[2.375rem] flex items-center justify-center">
-                  <img
+                  <LazyLoadImage
                     src={TelegramIcon}
                     alt="telegram-icon"
                     className="size-5"
+                    effect="blur"
                   />
                 </div>
                 <span className="hidden xl:block font-medium">
@@ -59,10 +61,11 @@ export default function Header() {
                 className="size-12 xl:w-max bg-[#271220] border-2 border-[#513748] rounded-full flex items-center justify-center gap-3 xl:p-1.5 xl:pr-5"
               >
                 <div className="shrink-0 bg-gradietn size-[2.375rem] flex items-center justify-center">
-                  <img
+                  <LazyLoadImage
                     src={ChormeIcon}
                     alt="telegram-icon"
                     className="size-5"
+                    effect="blur"
                   />
                 </div>
                 <span className="hidden xl:block font-medium">
