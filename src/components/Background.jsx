@@ -13,7 +13,7 @@ export default function Background() {
           src={BackgrounTop}
           alt="background-top"
           className="min-w-[109.5rem] object-center h-[50.9375rem] absolute left-1/2 -translate-x-1/2"
-          effect="blur" // Effektni o'rnatish
+          effect="blur"
         />
         <LazyLoadImage
           src={BackgrounLeft}
@@ -30,7 +30,7 @@ export default function Background() {
         <LazyLoadImage
           src={BackgrounBottom}
           alt="background-bottom"
-          className="min-w-[109.5rem] object-center h-[50.9375rem] absolute bottom-0 -translate-x-1/2 left-1/2"
+          className="min-w-[109.5rem] object-center h-[50.9375rem] absolute bottom-0"
           effect="blur"
         />
       </div>

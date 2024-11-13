@@ -83,23 +83,23 @@ function HeroSection() {
                 touchAngle={false}
                 modules={[Navigation, Pagination, Mousewheel, Autoplay]}
                 autoplay={{
-                  delay: 3000,
+                  delay: 300000,
                   disableOnInteraction: false,
                 }}
                 className="mySwiper !size-full !rounded-28 !overflow-hidden"
               >
                 {bigBanners.map((banner, index) => (
-                  <SwiperSlide key={index}>
+                  <SwiperSlide key={index} className="!w-full !h-full">
                     <a
                       href={banner.redirect_to}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="size-full block"
                     >
-                      <LazyLoadImage
+                      <img
                         src={banner.image_url}
                         alt={`Banner ${index + 1}`}
-                        className="w-full h-full object-cover"
-                        effect="blur"
+                        className="size-full object-cover"
                       />
                     </a>
                   </SwiperSlide>

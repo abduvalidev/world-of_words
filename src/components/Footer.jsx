@@ -14,7 +14,7 @@ export default function Header() {
             <div className="flex items-center gap-4 justify-between w-full md:w-auto">
               <Link
                 to="/chat"
-                className="size-12 xl:w-max bg-[#271220] border-2 border-[#513748] rounded-full flex items-center justify-center gap-3 xl:p-1.5 xl:pr-5"
+                className="shrink-0 size-12 xl:w-max bg-[#271220] border-2 border-[#513748] rounded-full flex items-center justify-center gap-3 xl:p-1.5 xl:pr-5"
               >
                 <div className="shrink-0 bg-gradietn size-[2.375rem] flex items-center justify-center">
                   <LazyLoadImage
@@ -29,10 +29,7 @@ export default function Header() {
                 </span>
               </Link>
               <div className="block md:hidden space-y-2">
-                <p className="font-medium text-gradient text-center max-w-[200px] mx-auto">
-                  {t("Footer.center")}
-                </p>
-                <div className="font-medium flex flex-col">
+                <div className="font-medium flex flex-col text-xs md:text-base">
                   <Link
                     to="/"
                     className="text-[#BD89A9] decoration underline underline-offset-2"
@@ -55,10 +52,13 @@ export default function Header() {
                     </ul>
                   </div>
                 </div>
+                <p className="font-medium text-gradient text-center text-xs md:text-base max-w-[200px] mx-auto">
+                  {t("Footer.center")}
+                </p>
               </div>
               <Link
                 to="/chat"
-                className="size-12 xl:w-max bg-[#271220] border-2 border-[#513748] rounded-full flex items-center justify-center gap-3 xl:p-1.5 xl:pr-5"
+                className="shrink-0 size-12 xl:w-max bg-[#271220] border-2 border-[#513748] rounded-full flex items-center justify-center gap-3 xl:p-1.5 xl:pr-5"
               >
                 <div className="shrink-0 bg-gradietn size-[2.375rem] flex items-center justify-center">
                   <LazyLoadImage
