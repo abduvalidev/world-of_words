@@ -1,10 +1,25 @@
+import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import NextBtn from "../assets/svg/next-button.svg";
 import Ligh from "../assets/svg/light.svg";
-import PopularImage from "../assets/img/popular-image.png";
+import Skeleton from '@mui/material/Skeleton';  // Importing MUI Skeleton
 
 function Popular() {
   const { t } = useTranslation();
+  const [popularBooks, setPopularBooks] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('https://dev.api.worldwords.io/web/main/books')
+      .then(response => response.json())
+      .then(data => {
+        // console.log(data);
+        setPopularBooks(data.data.popular || []);
+        setLoading(false);  // Set loading to false when data is fetched
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
+
   return (
     <section className="max-w-1140 2xl:max-w-base mx-auto px-2.5 md:px-10 lg:px-10 2xl:px-5 mt-[30px]">
       <div className="w-max h-12 box-shadow1 rounded-full overflow-hidden border-2 border-[#271822]">
@@ -19,141 +34,31 @@ function Popular() {
         <div className="relative z-10 border-2 border-[#271822]/80 bg-gradient__popular rounded-28 mt-4">
           <div className=" border-2 border-[#634357] rounded-28  p-4 md:p-4 lg:p-6 2xl:p-8">
             <div className="relative flex gap-3.5 overflow-x-auto no-scroll px-4 -mx-4 lg:px-0 lg:mx-0">
-              {/* Item 1 */}
-              <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
-                  <img
-                    src={PopularImage}
-                    alt="popular-image"
-                    className="size-full object-cover"
-                  />
-                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
-                </div>
-                <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
-                <h4 className="font-bold line-clamp-2 mt-2">
-                  Господство клана Неспящих
-                </h4>
-              </div>
-              {/* Item 2 */}
-              <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
-                  <img
-                    src={PopularImage}
-                    alt="popular-image"
-                    className="size-full object-cover"
-                  />
-                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
-                </div>
-                <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
-                <h4 className="font-bold line-clamp-2 mt-2">
-                  Господство клана Неспящих
-                </h4>
-              </div>
-              {/* Item 3 */}
-              <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
-                  <img
-                    src={PopularImage}
-                    alt="popular-image"
-                    className="size-full object-cover"
-                  />
-                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
-                </div>
-                <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
-                <h4 className="font-bold line-clamp-2 mt-2">
-                  Господство клана Неспящих
-                </h4>
-              </div>
-              {/* Item 4 */}
-              <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
-                  <img
-                    src={PopularImage}
-                    alt="popular-image"
-                    className="size-full object-cover"
-                  />
-                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
-                </div>
-                <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
-                <h4 className="font-bold line-clamp-2 mt-2">
-                  Господство клана Неспящих
-                </h4>
-              </div>
-              {/* Item 5 */}
-              <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
-                  <img
-                    src={PopularImage}
-                    alt="popular-image"
-                    className="size-full object-cover"
-                  />
-                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
-                </div>
-                <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
-                <h4 className="font-bold line-clamp-2 mt-2">
-                  Господство клана Неспящих
-                </h4>
-              </div>
-              {/* Item 6 */}
-              <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
-                  <img
-                    src={PopularImage}
-                    alt="popular-image"
-                    className="size-full object-cover"
-                  />
-                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
-                </div>
-                <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
-                <h4 className="font-bold line-clamp-2 mt-2">
-                  Господство клана Неспящих
-                </h4>
-              </div>
-              {/* Item 7 */}
-              <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
-                  <img
-                    src={PopularImage}
-                    alt="popular-image"
-                    className="size-full object-cover"
-                  />
-                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
-                </div>
-                <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
-                <h4 className="font-bold line-clamp-2 mt-2">
-                  Господство клана Неспящих
-                </h4>
-              </div>
-              {/* Item 8 */}
-              <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
-                  <img
-                    src={PopularImage}
-                    alt="popular-image"
-                    className="size-full object-cover"
-                  />
-                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
-                </div>
-                <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
-                <h4 className="font-bold line-clamp-2 mt-2">
-                  Господство клана Неспящих
-                </h4>
-              </div>
-              {/* Item 9 */}
-              <div className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
-                <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
-                  <img
-                    src={PopularImage}
-                    alt="popular-image"
-                    className="size-full object-cover"
-                  />
-                  <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
-                </div>
-                <p className="text-sm/4 line-clamp-1 mt-2">Дем Михайлов</p>
-                <h4 className="font-bold line-clamp-2 mt-2">
-                  Господство клана Неспящих
-                </h4>
-              </div>
+              {loading ? (
+                // Display skeleton loaders while loading
+                Array.from(new Array(7)).map((_, index) => (
+                  <div key={index} className="min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
+                    <Skeleton variant="rectangular" width="100%" className='!h-40 sm:!h-44 lg:!h-[13.6875rem]' />
+                    <Skeleton width="60%" />
+                    <Skeleton width="80%" />
+                  </div>
+                ))
+              ) : (
+                popularBooks.map((book, index) => (
+                  <div key={index} className="cursor-pointer min-w-[7.125rem] md:min-w-32 lg:min-w-40 w-[7.125rem] md:w-32 lg:w-[9.9375rem]">
+                    <div className="relative w-full h-40 sm:h-44 lg:h-[13.6875rem] overflow-hidden rounded-xl border-2 border-[#271822]">
+                      <img
+                        src={book.image}
+                        alt={book.name}
+                        className="size-full object-cover"
+                      />
+                      <div className="absolute top-0 left-0 size-full rounded-xl border-2 border-[#63435799]"></div>
+                    </div>
+                    <p className="text-sm/4 line-clamp-1 mt-2">{book.author}</p>
+                    <h4 className="font-bold line-clamp-2 mt-2">{book.name}</h4>
+                  </div>
+                ))
+              )}
             </div>
           </div>
         </div>
