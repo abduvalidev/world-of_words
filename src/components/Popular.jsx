@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import NextBtn from "../assets/svg/next-button.svg";
 import Ligh from "../assets/svg/light.svg";
-import Skeleton from '@mui/material/Skeleton';  // Importing MUI Skeleton
+import Skeleton from '@mui/material/Skeleton'; 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Popular() {
