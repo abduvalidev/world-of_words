@@ -63,11 +63,11 @@ function News() {
             </div>
           </div>
         </div>
-        <LazyLoadImage
+        <img
           src={Ligh}
           alt="light"
           className="absolute z-0 left-10 top-1/2 -translate-y-1/2 w-full h-[600px]"
-          effect="blur"
+          // effect="blur"
         />
       </div>
     </section>

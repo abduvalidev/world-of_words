@@ -53,19 +53,19 @@
 
 .border-svg::after {
   content: "";
-  @apply absolute top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#220F1C] size-2;
+  @apply absolute top-1/3 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#220F1C] size-2;
 }
 
 .border-svg::before {
   content: "";
-  @apply absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#220F1C] size-2;
+  @apply absolute top-1/3 right-0 translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#220F1C] size-2;
 }
 .text-gradient {
-  color: #634357; /* matn rangiga mos rang tanlang */
-  text-shadow: 2px 2px 0 #1a001f, /* yuqori chap soyalar */ -2px 2px 0 #1a001f,
-    /* yuqori o'ng soyalar */ 2px -2px 0 #1a001f,
-    /* past chap soyalar */ -2px -2px 0 #1a001f,
-    /* past o'ng soyalar */ 0px 5px 10px rgba(0, 0, 0, 0.5);
+  color: #634357;
+  text-shadow: 2px 2px 0 #1a001f, -2px 2px 0 #1a001f,
+     2px -2px 0 #1a001f,
+     -2px -2px 0 #1a001f,
+    0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Scroll styles */

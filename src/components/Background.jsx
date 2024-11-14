@@ -9,11 +9,11 @@ export default function Background() {
   return (
     <div className="absolute z-0 size-full top-0 overflow-x-hidden">
       <div className="relative overflow-hidden top-0 w-full min-h-full h-full">
-        <LazyLoadImage
+        <img
           src={BackgrounTop}
           alt="background-top"
           className="min-w-[109.5rem] object-center h-[50.9375rem] absolute left-1/2 -translate-x-1/2"
-          effect="blur"
+          // effect="blur"
         />
         <LazyLoadImage
           src={BackgrounLeft}
@@ -27,11 +27,11 @@ export default function Background() {
           className="hidden min-h-[109.5rem] w-[50.9375rem] absolute top-1/2 -translate-y-1/2 right-0 rotate-180"
           effect="blur"
         />
-        <LazyLoadImage
+        <img
           src={BackgrounBottom}
           alt="background-bottom"
           className="min-w-[109.5rem] object-center h-[50.9375rem] absolute bottom-0"
-          effect="blur"
+          // effect="blur"
         />
       </div>
     </div>
