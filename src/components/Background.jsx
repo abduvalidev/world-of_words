@@ -30,7 +30,7 @@ export default function Background() {
         <img
           src={BackgrounBottom}
           alt="background-bottom"
-          className="min-w-[109.5rem] object-center h-[50.9375rem] absolute bottom-0"
+          className="min-w-[109.5rem] object-center h-[50.9375rem] absolute bottom-0 left-1/2 -translate-x-1/2"
           // effect="blur"
         />
       </div>
