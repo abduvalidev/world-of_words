@@ -1,11 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import Banner from "../assets/img/banner.png";
+// import Banner from "../assets/img/banner.png";
 import RightImage from "../assets/img/right-image.jpeg";
 import Prev from "../assets/svg/prev.svg";
 import { useRef, useState, useEffect } from "react";
 import { Autoplay, Mousewheel, Navigation, Pagination } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import NextBtn from "../assets/svg/next-button.svg";
+import AppsLeft from "../assets/svg/apps-left.svg";
+import AppsRight from "../assets/svg/apps-right.svg";
+import "../fonts/stylesheet.css";
 function Apps() {
   const { t } = useTranslation();
   const swiperRef = useRef(null);
@@ -53,52 +56,48 @@ function Apps() {
       </div>
       <div className="flex justify-between gap-11 mt-[30px]">
         {/* Left Banner */}
-        <div className="relative w-full 2xl:max-w-[59.625rem] h-[180px] sm:h-[278px]">
-          <div className="size-full relative z-0 overflow-hidden rounded-28 border-2 border-[#271822] box-shadow1">
+        <div className="relative w-full 2xl:max-w-[59.625rem]">
+          <div className="size-full relative z-0 overflow-hidden rounded-28 bg-gradient__2 border-2 border-[#271822] box-shadow1">
             {/* Custom Overlay Border */}
-            <div className="size-full rounded-28 border-2 border-[#9b718c]">
-              <Swiper
-                ref={swiperRef}
-                cssMode={false}
-                mousewheel={true}
-                touchAngle={false}
-                modules={[Navigation, Pagination, Mousewheel, Autoplay]}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                className="mySwiper !size-full !rounded-28 !overflow-hidden"
-              >
-                {/* Slayderlar */}
-                <SwiperSlide>
-                  <img
-                    src={Banner}
-                    alt="Banner"
-                    className="w-full h-full object-cover"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src={Banner}
-                    alt="Banner"
-                    className="w-full h-full object-cover"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src={Banner}
-                    alt="Banner"
-                    className="w-full h-full object-cover"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src={Banner}
-                    alt="Banner"
-                    className="w-full h-full object-cover"
-                  />
-                </SwiperSlide>
-              </Swiper>
+            <div className="size-full rounded-28 border-2 border-[#634357] p-4 px-12">
+              <div className="w-full max-w-[30.5rem]">
+                <div className="flex items-center gap-5">
+                  <img src={AppsLeft} alt="apps-left" className="w-12 h-1.5" />
+                  <h2 className="font-copperplate text-4xl text-[#FFD5CD]">
+                    Литературные миры?
+                  </h2>
+                  <img src={AppsRight} alt="app-right" className="w-12 h-1.5" />
+                </div>
+                <Swiper
+                  ref={swiperRef}
+                  cssMode={false}
+                  mousewheel={true}
+                  // touchAngle={false}
+                  modules={[Navigation, Pagination, Mousewheel, Autoplay]}
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                  }}
+                  className="mySwiper !size-full !rounded-28 !overflow-hidden"
+                >
+                  {/* Slayderlar */}
+                  <SwiperSlide>
+                    <h4 className="font-semibold text-sm text-[#FFD5CD] mt-2.5">
+                      Мы даем писателям возможность создавать арт-объекты по
+                      мотивам своих литературных вселенных!
+                    </h4>
+                    <p className="text mt-2.5 line-clamp-3">
+                      Фигурки для украшения вашего книжного шкафа, карточки для
+                      ваших литературных альбомов - все эти арт-объекты вы
+                      можете использовать в приложении WoW Books и повышать за
+                      счет них заработок литкоинов. Можно сказать, что это
+                      “мерч” по книжным вселенным, только токенизированный в
+                      блокчейне и имеющий, помимо коллекционного, еще и
+                      практическое применение.
+                    </p>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
           {/* Custom Next & Prev Buttons */}

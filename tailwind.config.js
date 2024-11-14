@@ -17,6 +17,7 @@ export default {
       },
       fontFamily: {
         'monserrat': ["Montserrat", "serif"],
+        'copperplate': 'Copperplate',
       },
       colors: {
         primary: '#3D2736',

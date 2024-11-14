@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Copperplate';
+    src: url('Copperplate-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
