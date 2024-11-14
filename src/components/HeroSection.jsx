@@ -78,7 +78,7 @@ function HeroSection() {
       {/* Left Banner */}
       <div className="relative w-full 2xl:max-w-[59.625rem] h-[180px] sm:h-[278px]">
         <div className="size-full relative z-0 overflow-hidden rounded-28 border-2 border-[#271822] box-shadow1">
-          <div className="size-full rounded-28 border-2 border-[#9b718c]">
+          <div className="size-full rounded-28 border-2 border-[#634357]">
             {loading ? (
               <div className="flex items-center justify-center w-full h-full">
                 <CircularProgress size={50} color="secondary" />
