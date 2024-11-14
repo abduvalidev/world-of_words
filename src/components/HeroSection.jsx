@@ -23,13 +23,21 @@ function HeroSection() {
         const data = await response.json();
 
         if (data.error_code === 0) {
-          setBigBanners(data.data.big_banners || []);
-          setSmallBanner(data.data.small_banner || null);
+          const bigBannersData = data.data.big_banners || [];
+          const smallBannerData = data.data.small_banner || null;
+
+          // Ma'lumotlarni holatlarga o‘rnatish
+          setBigBanners(bigBannersData);
+          setSmallBanner(smallBannerData);
+
+          // Ma'lumotlar kelganda loading ni o'chirish
+          if (bigBannersData.length > 0 || smallBannerData) {
+            setLoading(false);
+          }
         }
       } catch (error) {
         console.error("Banner ma'lumotlarini olishda xatolik:", error);
-      } finally {
-        setLoading(false);
+        setLoading(true);
       }
     };
 
@@ -164,7 +172,7 @@ function HeroSection() {
           </a>
         ) : (
           <div className="size-full flex items-center justify-center">
-            <p>Loading...</p>
+            <p>Malumot mavjud emas</p>
           </div>
         )}
         <div className="absolute top-0 left-0 size-full rounded-28 border-2 border-[#63435799]"></div>
